@@ -35,6 +35,17 @@ export const AppHooks = () => {
   /* modal com hook */
   const [modal, setModal] = React.useState(false);
 
+  const [items, setItems] = React.useState("Teste");
+
+  // para atualizar o estado, sempre usar a função set
+  function handleClick3() {
+    setItems("Outro");
+  }
+
+  const [contar, setContar] = React.useState(1);
+  function contarBtn() {
+    setContar(contar + 1);
+  }
   return (
     <>
       <div>
@@ -51,6 +62,13 @@ export const AppHooks = () => {
         <div>{modal ? "Modal aberto" : "Modal Fechado"}</div>
         <Modal modal={modal} setModal={setModal} />
         <ButtonModal setModal={setModal} />
+      </div>
+
+      <hr />
+      <div>
+        <p>{items}</p>
+        <button onClick={handleClick3}>Outro</button>
+        <button onClick={contarBtn}>{contar}</button>
       </div>
     </>
   );
