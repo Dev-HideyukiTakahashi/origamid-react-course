@@ -7,6 +7,7 @@ import { Exercicio2 } from "./Exercicio2/Exercicio2.jsx";
 import { AppHooks } from "./hooks-aula/AppHooks.jsx";
 import { AppExercicio3 } from "./Exercicio3/AppExercicio3.jsx";
 import { AppEffect } from "./use-effect/AppEffect.jsx";
+import { AppRef } from "./use-ref/AppRef.jsx";
 
 createRoot(document.getElementById("root")).render(
   <>
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")).render(
     {/* <Exercicio2 /> */}
     {/* <AppHooks /> */}
     {/* <AppExercicio3 /> */}
-    <AppEffect />
+    {/* <AppEffect /> */}
+    {<AppRef />}
   </>
 );
