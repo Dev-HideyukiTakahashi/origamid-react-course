@@ -10,6 +10,8 @@ import { AppEffect } from "./use-effect/AppEffect.jsx";
 import { AppRef } from "./use-ref/AppRef.jsx";
 import { AppMemoCallback } from "./use-memo-callback/AppMemoCallback.jsx";
 import { AppContext } from "./use-context/AppContext.jsx";
+import { CustomHook } from "./custom-hook/CustomHook.jsx";
+import { FetchTest } from "./custom-hook/FetchTest.jsx";
 
 createRoot(document.getElementById("root")).render(
   <>
@@ -22,6 +24,7 @@ createRoot(document.getElementById("root")).render(
     {/* <AppEffect /> */}
     {/* {<AppRef />} */}
     {/* {<AppMemoCallback />} */}
-    {<AppContext />}
+    {/* {<AppContext />} */}
+    <FetchTest />
   </>
 );
