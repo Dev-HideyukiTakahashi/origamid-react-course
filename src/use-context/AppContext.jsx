@@ -1,12 +1,15 @@
 import React from "react";
+import { GlobalExercicio } from "./GlobalExercicio";
 import { ProdutoContext } from "./ProdutoContext";
-import { GlobalStorage } from "./UserContext";
 
 export const AppContext = () => {
   return (
-    <GlobalStorage>
+    <GlobalExercicio>
       <ProdutoContext />
-      <div></div>
-    </GlobalStorage>
+    </GlobalExercicio>
+    // <GlobalStorage>
+    //   <ProdutoContext />
+    //   <div></div>
+    // </GlobalStorage>
   );
 };
