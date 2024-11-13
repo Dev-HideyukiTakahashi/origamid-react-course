@@ -8,6 +8,7 @@ import { AppHooks } from "./hooks-aula/AppHooks.jsx";
 import { AppExercicio3 } from "./Exercicio3/AppExercicio3.jsx";
 import { AppEffect } from "./use-effect/AppEffect.jsx";
 import { AppRef } from "./use-ref/AppRef.jsx";
+import { AppMemoCallback } from "./use-memo-callback/AppMemoCallback.jsx";
 
 createRoot(document.getElementById("root")).render(
   <>
@@ -18,6 +19,7 @@ createRoot(document.getElementById("root")).render(
     {/* <AppHooks /> */}
     {/* <AppExercicio3 /> */}
     {/* <AppEffect /> */}
-    {<AppRef />}
+    {/* {<AppRef />} */}
+    {<AppMemoCallback />}
   </>
 );
