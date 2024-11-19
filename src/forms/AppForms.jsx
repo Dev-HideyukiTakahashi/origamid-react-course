@@ -1,4 +1,5 @@
 import React from 'react'
+import { TextArea } from './TextArea';
 
 export const AppForms = () => {
     const [nome, setNome] = React.useState('');
@@ -9,6 +10,7 @@ export const AppForms = () => {
     }
 
   return (
+    <>
     <form onSubmit={handleSubmit}>
 
         <label htmlFor="nome">Nome</label>
@@ -29,5 +31,9 @@ export const AppForms = () => {
 
         <button>Enviar</button>
     </form>
+        <hr />
+        <TextArea/>
+        <hr />
+        </>
   )
 }
