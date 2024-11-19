@@ -2,6 +2,7 @@ import React from 'react'
 import { TextArea } from './TextArea';
 import { Select } from './Select';
 import { Radio } from './Radio';
+import { Checkbox } from './Checkbox';
 
 export const AppForms = () => {
     const [nome, setNome] = React.useState('');
@@ -40,6 +41,7 @@ export const AppForms = () => {
         <hr />
         <Radio/>
         <hr />
+        <Checkbox/>
         </>
   )
 }
