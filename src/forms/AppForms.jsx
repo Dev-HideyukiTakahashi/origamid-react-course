@@ -1,6 +1,7 @@
 import React from 'react'
 import { TextArea } from './TextArea';
 import { Select } from './Select';
+import { Radio } from './Radio';
 
 export const AppForms = () => {
     const [nome, setNome] = React.useState('');
@@ -36,6 +37,8 @@ export const AppForms = () => {
         <TextArea/>
         <hr />
         <Select/>
+        <hr />
+        <Radio/>
         <hr />
         </>
   )
