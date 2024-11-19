@@ -1,5 +1,6 @@
 import React from 'react'
 import { TextArea } from './TextArea';
+import { Select } from './Select';
 
 export const AppForms = () => {
     const [nome, setNome] = React.useState('');
@@ -33,6 +34,8 @@ export const AppForms = () => {
     </form>
         <hr />
         <TextArea/>
+        <hr />
+        <Select/>
         <hr />
         </>
   )
