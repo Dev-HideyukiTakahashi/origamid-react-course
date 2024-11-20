@@ -6,6 +6,8 @@ export const AppComponents = () => {
   const [nome, setNome] = React.useState("");
   const [email, setEmail] = React.useState("");
 
+  const [produto, setProduto] = React.useState("");
+
   return (
     <form>
       <h2>InputComponent</h2>
@@ -18,6 +20,14 @@ export const AppComponents = () => {
         required
       />
       <hr />
+      <h2>SelectComponent</h2>
+      <SelectComponent
+        options={["Smartphone", "Notebook"]}
+        value={produto}
+        setValue={setProduto}
+      />
+      <hr />
+      <button>Enviar</button>
     </form>
   );
 };
