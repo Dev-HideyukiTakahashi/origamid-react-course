@@ -13,6 +13,7 @@ import { AppContext } from "./use-context/AppContext.jsx";
 import { CustomHook } from "./custom-hook/CustomHook.jsx";
 import { FetchTest } from "./custom-hook/FetchTest.jsx";
 import { AppForms } from "./forms/AppForms.jsx";
+import { AppComponents } from "./components/AppComponents.jsx";
 
 createRoot(document.getElementById("root")).render(
   <>
@@ -27,6 +28,7 @@ createRoot(document.getElementById("root")).render(
     {/* {<AppMemoCallback />} */}
     {/* {<AppContext />} */}
     {/* <FetchTest /> */}
-    <AppForms />
+    {/* <AppForms /> */}
+    <AppComponents />
   </>
 );
