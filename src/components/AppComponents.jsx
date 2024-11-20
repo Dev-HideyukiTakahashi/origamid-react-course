@@ -2,6 +2,7 @@ import React from "react";
 import { InputComponent } from "./InputComponent";
 import { SelectComponent } from "./SelectComponent";
 import { RadioComponent } from "./RadioComponent";
+import { CheckboxComponent } from "./CheckboxComponent";
 
 export const AppComponents = () => {
   const [nome, setNome] = React.useState("");
@@ -9,6 +10,7 @@ export const AppComponents = () => {
 
   const [produto, setProduto] = React.useState("");
   const [cor, setCor] = React.useState("");
+  const [linguagens, setLinguagens] = React.useState([]);
 
   return (
     <form>
@@ -34,6 +36,13 @@ export const AppComponents = () => {
         options={["Azul", "Vermelho"]}
         value={cor}
         setValue={setCor}
+      />
+      <hr />
+      <h2>CheckboxComponent</h2>
+      <CheckboxComponent
+        options={["Javascript", "PHP", "Ruby"]}
+        value={linguagens}
+        setValue={setLinguagens}
       />
       <hr />
       <button>Enviar</button>
