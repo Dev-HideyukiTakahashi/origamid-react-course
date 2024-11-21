@@ -4,6 +4,7 @@ import { Home } from "./Home";
 import { Sobre } from "./Sobre";
 import { Header } from "./Header";
 import { Login } from "./Login";
+import { Produto } from "./Produto";
 
 // BrowserRouter = rota para todo o elemento
 // Routes = envolve as rotas
@@ -17,6 +18,7 @@ export const AppRouter = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="sobre" element={<Sobre />}></Route>
         <Route path="login" element={<Login />}></Route>
+        <Route path="produto/:id" element={<Produto />}></Route>
       </Routes>
     </BrowserRouter>
   );
