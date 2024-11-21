@@ -14,6 +14,7 @@ import { CustomHook } from "./custom-hook/CustomHook.jsx";
 import { FetchTest } from "./custom-hook/FetchTest.jsx";
 import { AppForms } from "./forms/AppForms.jsx";
 import { AppComponents } from "./components/AppComponents.jsx";
+import { AppRouter } from "./react-router/AppRouter.jsx";
 
 createRoot(document.getElementById("root")).render(
   <>
@@ -29,6 +30,7 @@ createRoot(document.getElementById("root")).render(
     {/* {<AppContext />} */}
     {/* <FetchTest /> */}
     {/* <AppForms /> */}
-    <AppComponents />
+    {/* <AppComponents /> */}
+    <AppRouter />
   </>
 );

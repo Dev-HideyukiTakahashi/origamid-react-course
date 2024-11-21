@@ -10,4 +10,9 @@
   - `npm install` .
 
 - Ao criar um componente, atalho `rafc + tab` para gerar dados básicos
+
   - Necessário extensão : VS Code ES7+ React/Redux/React-Native/JS snippets
+
+- React router:
+  - Para gerenciar rotas com react
+  - `npm install react-router-dom`
